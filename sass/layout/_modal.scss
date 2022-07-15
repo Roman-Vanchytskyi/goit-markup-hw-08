@@ -19,7 +19,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 528px;
+	width: 450px;
 	height: auto;
 	padding: 40px;
 	background: var(--minor-color);
@@ -29,6 +29,10 @@
 	transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 	.backdrop.is-hidden & {
 		transform: translate(-50%, -50%) scale(1.2) rotate(-180deg);
+	}
+
+	@include desktop {
+		width: 528px;
 	}
 }
 
@@ -68,6 +72,10 @@
 	letter-spacing: 0.03em;
 	color: var(--primary-color);
 	margin-bottom: 12px;
+
+	@include desktop {
+		line-height: 1.5;
+	}
 }
 
 .modal-field {
@@ -140,12 +148,16 @@
 
 .check-text {
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.71;
+	font-size: 12px;
+	line-height: 1.17;
 	letter-spacing: 0.03em;
 	color: var(--secondary-color);
 	a {
 		color: var(--accent-color);
+	}
+	@include desktop {
+		font-size: 14px;
+		line-height: 1.71;
 	}
 }
 

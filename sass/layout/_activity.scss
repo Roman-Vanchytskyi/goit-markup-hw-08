@@ -1,5 +1,9 @@
 .activity {
+	display: none;
 	padding-bottom: 94px;
+	@include desktop {
+		display: block;
+	}
 }
 
 .activity-title {
