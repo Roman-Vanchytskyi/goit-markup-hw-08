@@ -34,6 +34,10 @@
 	@include desktop {
 		width: 528px;
 	}
+
+	@media screen and (min-width: 320px) and (max-width: 449px) {
+		width: 320px;
+	}
 }
 
 .modal-close-btn {

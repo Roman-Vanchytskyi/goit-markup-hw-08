@@ -213,7 +213,7 @@
 		height: 100%;
 		justify-content: space-between;
 		overflow: auto;
-		margin-left: 40px;
+		margin-left: 25px;
 	}
 }
 
@@ -226,6 +226,7 @@
 .close-open-btn {
 	display: block;
 	margin-left: auto;
+	margin-right: 20px;
 	background-color: transparent;
 	border: none;
 	margin-top: 10px;
@@ -287,6 +288,7 @@
 
 .mob-menu-soc {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .mob-menu-soc__item:not(:last-child) {
@@ -308,4 +310,8 @@
 	line-height: 1.22;
 	letter-spacing: 0.02em;
 	color: var(--accent-color);
+}
+
+.mob-menu__bottom {
+	margin-bottom: 33px;
 }
