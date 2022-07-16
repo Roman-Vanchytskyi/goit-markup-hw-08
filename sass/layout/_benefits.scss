@@ -46,7 +46,11 @@
 	letter-spacing: 0.03em;
 	margin-bottom: 10px;
 	text-transform: uppercase;
+	text-align: center;
 	color: var(--primary-color);
+	@include tablet {
+		text-align: left;
+	}
 }
 
 .benefits__body {

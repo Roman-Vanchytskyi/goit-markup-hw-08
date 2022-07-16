@@ -185,9 +185,9 @@ ul {
 
 .nav__link {
   display: block;
-  margin-top: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   min-width: 49px;
-  height: 48px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -320,6 +320,8 @@ ul {
   top: 0;
   left: 0;
   background-color: #fff;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .mob-menu .container {
   display: flex;
@@ -327,7 +329,6 @@ ul {
   height: 100%;
   justify-content: space-between;
   overflow: auto;
-  margin-left: 25px;
 }
 
 .mob-menu.is-hidden {
@@ -339,7 +340,6 @@ ul {
 .close-open-btn {
   display: block;
   margin-left: auto;
-  margin-right: 20px;
   background-color: transparent;
   border: none;
   margin-top: 10px;
@@ -423,10 +423,6 @@ ul {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-}
-
-.mob-menu__bottom {
-  margin-bottom: 33px;
 }
 
 .hero {
@@ -570,7 +566,13 @@ ul {
   letter-spacing: 0.03em;
   margin-bottom: 10px;
   text-transform: uppercase;
+  text-align: center;
   color: var(--primary-color);
+}
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    text-align: left;
+  }
 }
 
 .benefits__body {
@@ -646,12 +648,19 @@ ul {
 
 .stuff {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   letter-spacing: 0.03em;
   color: var(--primary-color);
+}
+@media screen and (min-width: 1200px) {
+  .stuff {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .stuff-list {
@@ -752,12 +761,19 @@ ul {
 
 .clients-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   letter-spacing: 0.03em;
   color: var(--primary-color);
+}
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .clients-list {
