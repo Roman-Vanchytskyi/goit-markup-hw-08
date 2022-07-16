@@ -1100,9 +1100,9 @@ ul {
     width: 528px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 449px) {
+@media screen and (max-width: 449px) {
   .modal {
-    width: 320px;
+    width: 100%;
   }
 }
 
